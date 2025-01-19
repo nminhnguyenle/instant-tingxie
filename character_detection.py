@@ -17,7 +17,7 @@ PROMPT = '''You are an advanced AI trained in optical character recognition (OCR
 
 import PIL.Image
 img = PIL.Image.open('example2.jpg')
-genai.configure(api_key="AIzaSyBTj8_o4sc84VRXTf8R8HfAssltR3iS0VU")
+genai.configure(api_key="API-KEY-HERE")
 model = genai.GenerativeModel('gemini-1.5-pro')
 response = model.generate_content([PROMPT, img], stream=True)
 response.resolve()
