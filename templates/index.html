@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Righteous&display=swap" rel="stylesheet">
+    <title>The Instant Tingxie</title>
+  </head>
+  <body style="display: flex; min-height: 100vh; align-items: center; overflow-x: hidden; max-block-size: 50%; max-height: 50%; max-width: 50%;">
+    <div class="circle" style="right: -40%; width: 80%; height: 80em; background-color: #ffb3b3"></div>
+    <div class="circle" style="right: -30%; width: 60%; height: 60em; background-color: #f66463"></div>
+    <div class="circle" style="right: -20%; width: 40%; height: 40em; background-color: #ac4545;"></div>
+    <a style="align-items: center;">
+    <div class="container" style="animation: fade-down 0.75s ease-in-out;">
+      <div class="row">
+        <h1 style="margin: 0.2em;">
+          <img src="{{url_for('static', filename='instant_ting_xie.png')}}" width="75" height="75" style="margin-right:0.2em">Instant Tingxie</h1>
+        <h3 style="margin-left: 0.75em;margin-bottom: 0.5em;">Giving you full marks in every language exam!</h3>
+      </div>
+      <div class="row">
+        <a href="/upload"><button id="upload" class="indexbutton">Upload</button></a>
+      </div>
+      <div class="row">
+        <a href="/check"><button id="check" class="indexbutton">Check</button></a>
+      </div>
+    </div>
+    </a>
+  </body>
+</html>
